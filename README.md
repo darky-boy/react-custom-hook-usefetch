@@ -1,35 +1,19 @@
-# React Custom Hook – useFetch
+# Task 5 – React Custom Hook (useFetch)
 
-## Overview
+This project is created as part of Task 5 for the MERN Stack course.
 
-In this project, I created a custom React hook called `useFetch` to simplify
-data fetching from an API. The main idea was to avoid repeating fetch logic
-inside components and make the code more reusable and clean.
+In this project, a custom React hook called `useFetch` is used to fetch data from an external API and handle loading and error states.
 
-## Why Custom Hook?
+## Live Demo
+https://tutedude-ass5-om.netlify.app
 
-Fetching data usually requires handling loading states, errors, and side effects.
-By moving this logic into a custom hook, the component code becomes simpler
-and easier to understand.
+## API Used
+https://api.escuelajs.co/api/v1/products
 
-## Hook Design
+## How to Run Locally
+1. npm install
+2. npm run dev
 
-The `useFetch` hook:
-- Accepts a URL as a parameter
-- Uses `useState` to manage data, loading, and error states
-- Uses `useEffect` to trigger API calls
-- Uses `useCallback` to memoize the fetch function
-- Returns `data`, `loading`, and `error`
-
-## Component Usage
-
-A `Products` component uses the `useFetch` hook to fetch product data from
-a dummy API. While the data is loading, a loading message is shown. If an error
-occurs, an error message is displayed. Once data is fetched, it is rendered
-in a grid layout.
-
-## Conclusion
-
-This approach makes the code more modular, reusable, and easier to maintain.
-The custom hook can be reused with different APIs without changing the
-component logic.
+## Description
+The `useFetch` hook takes a URL as input and returns data, loading, and error values.  
+This makes API fetching reusable and clean.
